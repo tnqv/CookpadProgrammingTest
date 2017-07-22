@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CookpadProgrammingTest</string>
+    <string name="google_place_api_key">AIzaSyCxtvpPwQB2TxqbnBdMJ0QjkmSUtrKtBtQ</string>
+    <string name="connect_internet">No network connected , please connect the internet</string>
+</resources>

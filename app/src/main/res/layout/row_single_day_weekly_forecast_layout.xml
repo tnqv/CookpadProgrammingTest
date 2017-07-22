@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+    <RelativeLayout
+        android:id="@+id/layoutDateInfo"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/textViewRowDayInWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/textViewRowDate"
+            android:layout_below="@id/textViewRowDayInWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="9th Febuary"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageViewRowIconWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginStart="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/layoutDateInfo"
+        />
+    <RelativeLayout
+        android:id="@+id/layoutMinMaxTemp"
+        android:layout_toRightOf="@id/imageViewRowIconWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp">
+        <TextView
+            android:id="@+id/textViewRowMinTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22\u2103"
+            android:textSize="22dp"/>
+        <TextView
+            android:id="@+id/textViewRowMaxTemperature"
+            android:layout_below="@id/textViewRowMinTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34\u2103"
+            android:textSize="22dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewRowMainWeather"
+        android:layout_toRightOf="@id/layoutMinMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clouds"
+        android:textSize="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        />
+</RelativeLayout>
